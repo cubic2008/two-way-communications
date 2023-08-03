@@ -1,0 +1,22 @@
+.message-editor {
+    color: navy
+}
+
+/* .message-editor-header {
+    font-size: xx-large;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 20px;
+} */
+
+.message-editor-subject {
+    margin: 0;
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    line-height: 1.5;
+    letter-spacing: 0.00938em;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}

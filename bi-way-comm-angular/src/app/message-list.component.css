@@ -1,0 +1,84 @@
+.message-list {
+    color: navy
+}
+
+.message-list-no-message {
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+    /* font-weight: bold; */
+    font-size: 1.5em;
+    line-height: 2;
+    letter-spacing: 0.00938em;
+    display: block;
+    text-align: center;
+    padding-top: 20px;
+}
+
+/* .message-list-header {
+    font-size: xx-large;
+    font-weight: bold;
+} */
+
+.message-list-subheader {
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+    /* font-weight: bold; */
+    font-size: 1.5em;
+    line-height: 2;
+    letter-spacing: 0.00938em;
+    display: block;
+    text-align: center;
+    /* padding-top: 20px; */
+    padding-bottom: 10px;
+    /* font-weight: bold; */
+}
+
+.message-list-item-container {
+    /* display: inline-grid;
+    grid-template-columns: max-content auto;
+    justify-content: space-between;
+    justify-items: stretch; */
+    /* margin: 0; */
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+    font-weight: 400;
+    font-size: 1.5em;
+    /* width: 100%; */
+    /* line-height: 1.5;
+    letter-spacing: 0.00938em; */
+    /* display: block;
+    width: 300px; */
+}
+
+.message-list-item-container :hover {
+    color: red;
+}
+
+.message-list-item-container {
+}
+
+/* .message-list-mat-title {
+    display: grid;
+    grid-template-columns: max-content auto;
+    justify-content: space-between;
+    justify-items: stretch;
+} */
+
+.message-list-item-id {
+    /* display: inline; */
+    /* width: 500px; */
+    /* padding-left: 10px; */
+    width: 10%;
+}
+
+.message-list-item-subject {
+    /* display: inline; */
+    /* width: 500px; */
+    padding-left: 15px;
+    width: 50%;
+}
+
+.button-row {
+    /* display: table-cell; */
+    /* display: contents; */
+    /* max-width: 600px; */
+    text-align: end;
+    width: 30%;
+}

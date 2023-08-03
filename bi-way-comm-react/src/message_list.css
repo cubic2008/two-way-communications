@@ -1,0 +1,23 @@
+.message-list {
+    color: navy
+}
+
+.message-list-header {
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.message-list-subject {
+    margin: 0;
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+    font-weight: 400;
+    font-size: 1.5em;
+    line-height: 1.5;
+    letter-spacing: 0.00938em;
+    display: block;
+}
+
+.message-item :hover {
+    font-weight: bold;
+    color: navy;
+}

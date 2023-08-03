@@ -1,0 +1,33 @@
+<div *ngIf="!message" class="message-editor-no-message">Message Editor: no message is selected for editing</div>
+
+<div *ngIf="message" class="message-editor-subject">Edit Message: {{message.id}} - {{message.subject}}</div>
+
+<div *ngIf="messageInProgress">
+    <!-- <form class="message-editor-form"> -->
+        <mat-form-field class="message-editor-message-id-field">
+            <mat-label>Message ID</mat-label>
+            <input matInput type="text" [(ngModel)]="messageInProgress.id" readonly>
+        </mat-form-field>
+
+        <mat-form-field class="message-editor-subject-field">
+            <mat-label>Subject</mat-label>
+            <input matInput type="text" [(ngModel)]="messageInProgress.subject">
+            <button *ngIf="messageInProgress.subject" matSuffix mat-icon-button aria-label="Clear" (click)="messageInProgress.subject=''">
+                <mat-icon>close</mat-icon>
+            </button>
+        </mat-form-field>
+
+        <mat-form-field class="message-editor-content-field">
+            <mat-label>Content</mat-label>
+            <textarea matInput placeholder="please enter message content here ..."  [(ngModel)]="messageInProgress.content"></textarea>
+        </mat-form-field>
+
+        <section class="message-editor-actions">
+                <button class="message-editor-action" mat-raised-button (click)="cancelMessage()">Cancel</button>
+                <button class="message-editor-action" mat-raised-button (click)="resetMessage()">Reset</button>
+                <button class="message-editor-action" mat-raised-button color="primary" (click)="saveMessage()">Save</button>
+        </section>
+    
+
+    <!-- </form> -->
+</div>

@@ -1,0 +1,18 @@
+<div class="messages">
+    <div class="messages-header">Messages (total: {{messages.length}} messages)</div>
+    <section>
+        <div class="messages-header-actions">
+          <button mat-raised-button color="primary" (click)="addMessage()">Create a new message</button>
+        </div>
+    </section>
+    <mat-divider></mat-divider>
+    <div class="messages-content">
+        <div class="message-list">
+            <app-message-list [messages]="messages" (messageActionEvent)="processMessage($event)"></app-message-list> 
+        </div>
+        <div class="message-editor">
+            <app-message-editor [message]="currentMessage" (messageSaveEvent)="saveMessage($event)"></app-message-editor>
+        </div>
+    </div>
+</div>
+

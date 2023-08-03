@@ -1,0 +1,22 @@
+<div *ngIf="messages.length === 0" class="message-list-no-message">No messages</div>
+
+<mat-list class="message-list" *ngIf="messages.length > 0">
+    <div mat-subheader class="message-list-subheader">Messages</div>
+    <mat-list-item *ngFor="let msg of messages" class="message-list-item-container">
+        <mat-icon matListItemIcon [style.color]="currentMsgId === msg.id ? 'navy' : ''">note</mat-icon>
+        <span matListItemTitle class="message-list-item">
+            <span class="message-list-item-id">{{msg.id}}</span>
+            <span class="message-list-item-subject">{{msg.subject}}</span>
+            <span class="button-row">
+                <button mat-icon-button color="primary" aria-label="Edit the message" (click)="onMessageEdit(msg.id)">
+                    <mat-icon>edit</mat-icon>
+                </button>
+                <button mat-icon-button color="primary" aria-label="Delete the message" (click)="onMessageDelete(msg.id)">
+                    <mat-icon>delete</mat-icon>
+                </button>
+            </span>
+        </span>
+        <div matListItemLine>{{msg.timestamp | date: 'MMM-dd, yyyy hh:mm'}}</div>
+    </mat-list-item>
+  </mat-list>
+
